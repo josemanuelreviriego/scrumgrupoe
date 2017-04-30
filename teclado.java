@@ -8,16 +8,16 @@ public class teclado implements KeyListener{
 	private static int numeroTeclas =  120;
 	private boolean[] teclas = new boolean[numeroTeclas];
 	
-	public boolean up;
-	public boolean down;
-	public boolean right;
-	public boolean left;
+	public boolean arriba;
+	public boolean abajo;
+	public boolean derecha;
+	public boolean izquierda;
 	
 	public void actualizar(){
-		up = teclas[KeyEvent.VK_UP];
-		down = teclas[KeyEvent.VK_DOWN];
-		right = teclas[KeyEvent.VK_RIGHT];
-		left = teclas[KeyEvent.VK_LEFT];
+		arriba = teclas[KeyEvent.VK_UP];
+		abajo = teclas[KeyEvent.VK_DOWN];
+		derecha = teclas[KeyEvent.VK_RIGHT];
+		izquierda = teclas[KeyEvent.VK_LEFT];
 	}
 	
 	// se pone KeyEvent porque le estas pasando un evento de teclado
