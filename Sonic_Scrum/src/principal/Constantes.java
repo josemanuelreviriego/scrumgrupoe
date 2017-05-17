@@ -11,6 +11,6 @@ public class Constantes {
 
 	public static int APS = 0;
 
-	public static String RUTA_MAPA = "/texto/1.soc";
+	public static String RUTA_MAPA = "/mapas/1.soc";
 	public static String RUTA_PERSONAJE = "/imagenes/hojasPersonajes/1.png";
 }

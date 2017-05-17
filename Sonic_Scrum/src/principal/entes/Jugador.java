@@ -45,9 +45,9 @@ public class Jugador {
 
 	private Mapa mapa;
 
-	public Jugador(double posicionX, double posicionY, Mapa mapa) {
-		this.posicionX = posicionX;
-		this.posicionY = posicionY;
+	public Jugador(Mapa mapa) {
+		posicionX = mapa.getPosicionInicial().getX();
+		posicionY = mapa.getPosicionInicial().getY();
 
 		this.mapa = mapa;
 
@@ -318,5 +318,9 @@ public class Jugador {
 
 	public double getPosicionY() {
 		return posicionY;
+	}
+
+	public Rectangle get_LIMITE_ARRIBA() {
+		return LIMITE_ARRIBA;
 	}
 }

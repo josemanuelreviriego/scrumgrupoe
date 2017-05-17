@@ -1,6 +1,7 @@
 package principal.mapas;
 
 import java.awt.Graphics;
+import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
@@ -16,6 +17,13 @@ public class Mapa {
 
 	private final int ancho;
 	private final int alto;
+
+	private final Point posicionInicial;
+	private final Point puntoSalida;
+
+	private Rectangle zonaSalida;
+
+	private String siguienteMapa;
 
 	private final Sprite[] paleta;
 
@@ -57,7 +65,24 @@ public class Mapa {
 
 		sprites = extraerSprites(cadenasSprites);
 
-		System.out.println(sprites.length);
+		String posicion = partes[6];
+		String[] posiciones = posicion.split("-");
+
+		posicionInicial = new Point();
+		posicionInicial.x = Integer.parseInt(posiciones[0]) * Constantes.LADO_SPRITE;
+		posicionInicial.y = Integer.parseInt(posiciones[1]) * Constantes.LADO_SPRITE;
+
+		String salida = partes[7];
+		String[] datosSalida = salida.split("-");
+
+		puntoSalida = new Point();
+		puntoSalida.x = Integer.parseInt(datosSalida[0]);
+		puntoSalida.y = Integer.parseInt(datosSalida[1]);
+		siguienteMapa = datosSalida[2];
+		System.out.println(datosSalida[2]);
+
+		zonaSalida = new Rectangle();
+
 	}
 
 	private Sprite[] asignarSprites(final String[] partesPaleta, final String[] hojasSeparadas) {
@@ -140,6 +165,7 @@ public class Mapa {
 
 	public void actualizar(final int posicionX, final int posicionY) {
 		actualizarAreasColision(posicionX, posicionY);
+		actualizarZonaSalida(posicionX, posicionY);
 	}
 
 	private void actualizarAreasColision(final int posicionX, final int posicionY) {
@@ -160,6 +186,13 @@ public class Mapa {
 		}
 	}
 
+	private void actualizarZonaSalida(final int posicionX, final int posicionY) {
+		int puntoX = ((int) puntoSalida.getX()) * Constantes.LADO_SPRITE - posicionX + MARGEN_X;
+		int puntoY = ((int) puntoSalida.getY()) * Constantes.LADO_SPRITE - posicionY + MARGEN_Y;
+
+		zonaSalida = new Rectangle(puntoX, puntoY, Constantes.LADO_SPRITE, Constantes.LADO_SPRITE);
+	}
+
 	public Rectangle getBordes(final int posicionX, final int posicionY, final int anchoJugador,
 			final int altoJugador) {
 		int x = MARGEN_X - posicionX + anchoJugador;
@@ -168,5 +201,21 @@ public class Mapa {
 		int alto = this.alto * Constantes.LADO_SPRITE - altoJugador * 2;
 
 		return new Rectangle(x, y, ancho, alto);
+	}
+
+	public Point getPosicionInicial() {
+		return posicionInicial;
+	}
+
+	public Point getPuntosalida() {
+		return puntoSalida;
+	}
+
+	public String getSiguienteMapa() {
+		return siguienteMapa;
+	}
+
+	public Rectangle getZonaSalida() {
+		return zonaSalida;
 	}
 }
