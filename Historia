@@ -1,0 +1,13 @@
+
+public class Main {
+
+public static void main(String[] args) {
+
+    JOptionPane.showMessageDialog( null, "Bienvenido\na al juego de Sonic y la mazmorra, es un mundo conmovedor donde
+    hay criaturas tenebrosas y necesitaras vencerlas para poder ganar, de ti depende amigo!" );
+
+      System.exit( 0 );  // termina el programa
+
+    }
+
+} 
