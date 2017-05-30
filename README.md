@@ -1,48 +1,48 @@
                         ¡¡¡¡¡¡¡LA MAZMORRA DE SONIC!!!!!!
 
 1º Srpint
-  Objetivos:
+ - Objetivos:
 
-  :white_check_mark: Mapa (Ventana).
+:white_check_mark: Mapa (Ventana).
   
-  :white_check_mark: Crear Inventario
+:white_check_mark: Crear Inventario
   
-  :white_check_mark: Crear Inventario
+:white_check_mark: Crear Inventario
   
-  :white_large_square: Diseño Personaje y poner sobre el mapa.
+:white_large_square: Diseño Personaje y poner sobre el mapa.
   
-  :white_large_square: Movimiento Personaje.
+:white_large_square: Movimiento Personaje.
   
   
   
 
  2º Srpite
-    Objetivos pendientes acabados:
+   - Objetivos pendientes acabados:
        
-  :white_check_mark: Diseño Personaje y poner sobre el mapa.
+:white_check_mark: Diseño Personaje y poner sobre el mapa.
  
-  :white_check_mark: Movimiento Personaje.
+:white_check_mark: Movimiento Personaje.
   
-  Objetivos Nuevos:
+  - Objetivos Nuevos:
   
-  :white_check_mark: Mapa aleatorio.
+:white_check_mark: Mapa aleatorio.
   
-  :white_check_mark: Crear historia.
+:white_check_mark: Crear historia.
   
-  :white_large_square: Hacer obstaculos aleatorios
+:white_large_square: Hacer obstaculos aleatorios
   
  3º Sprite
-      Objetivos pendientes acabados:
+   - Objetivos pendientes acabados:
     
-    :white_check_mark: Crear historia.
+:white_check_mark: Crear historia.
+     
+:white_check_mark: Obstaculos.
       
-    :white_check_mark: Obstaculos.
+:white_check_mark: Mapa redimensionarlo
       
-    :white_check_mark: Mapa redimensionarlo
+:white_large_square: Hacer enemigo
       
-    :white_large_square: Hacer enemigo
-      
-    :white_large_square: Obstaculos aleatorios
+:white_large_square: Obstaculos aleatorios
       
 Mapas y Personajes:
 
