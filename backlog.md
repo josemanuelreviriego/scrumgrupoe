@@ -43,6 +43,18 @@
 :white_large_square: Hacer enemigo
       
 :white_large_square: Obstaculos aleatorios
+
+4º Sripete
+
+- Acabar de hacer el enemigo
+
+- Acabar de poner los obstaculos en aleatorio
+
+- Sugerir pasarlo a unity para mejorar los graficos
+
+- Sugerir cargar otro personaje, por ejemplo una mujer y asi elegir con cual quieres jugar.
+
+
       
 Mapas y Personajes:
 
